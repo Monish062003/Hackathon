@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.containers{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.loginPage{
+    width: 80vh;
+    height: 55vw;
+    flex-shrink: 0;
+    border-radius: 14.051px;
+    background: #fff;
+    margin-top: 60px;
+    box-shadow: 4.684px 5.621px 39.157px -16.862px rgba(0, 0, 0, 0.25);
+    display: flex;
+  justify-content: center;
+}
+
+
+
+.logintag{
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+  .login_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+ 
+  .email_input:focus {
+    outline: none !important;
+    border: none !important;
+    border: 2.81px solid rgba(43, 80, 169, 0.70)!important;
+  }
+  .left_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .bg_img {
+    width: 70%;
+    height: 75%;
+  }
+  .logo_img_login {
+    width: 219px !important;
+    height: 76px !important;
+    margin-top: 2%;
+  }
+  .container_login {
+    width: 470px !important;
+  }
+  .container_forgot {
+    width: 486px !important;
+  }
+  h3,
+  .h3 {
+    font-size: 42px;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .create_account {
+    display: flex;
+    flex-direction: row;
+    font-style: normal;
+    justify-content: left;
+    font-weight: 600;
+    font-size: 20px;
+    align-items: center;
+  }
+  .create_account1 {
+    display: flex;
+    flex-direction: row;
+    font-style: normal;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    align-items: center;
+    opacity: 0.7;
+  }
+
+  .newUser-sec {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .newUser {
+    flex-shrink: 0;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18.735px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 111.5%;
+    opacity: 0.6;
+    text-align: center;
+  }
+
+  .create-account {
+    color: #214ea6;
+    font-size: 18.74px;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 20.89px;
+    word-wrap: break-word;
+    margin-left: 10px;
+    text-decoration-line: none;
+  }
+  
+  
+  
+  
+  .input_box,
+  .input_box1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+  }
+  .input_box1 {
+    margin-top: 10%;
+  }
+  .input_box_3 {
+    margin-top: 10%;
+  }
+  .input_box_h {
+    width: 45%;
+  }
+  .input::placeholder {
+    text-transform: uppercase;
+  }
+  .email_label {
+    font-size: 20px;
+    color: #000000;
+    opacity: 0.6;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .email_input {
+    width: 30vw;
+    height: 8vh;
+    border: none;
+    opacity: 0.6;
+    font-size: 20px;
+    margin-top: 1%;
+    background: #E8EFFF;
+  }
+  input:focus {
+    opacity: 1;
+    outline: none;
+    border-bottom: 4px solid #214ea6;
+  }
+  label:has(+ input:focus) {
+    color: #214ea6;
+    opacity: 1;
+  }
+  .eye {
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 94%;
+    margin-top: -6%;
+    z-index: 100;
+  }
+  .fa-eye {
+    color: #214ea6;
+  }
+  .remember {
+    color: #214ea6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20%;
+  }
+  .checkmark {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  .remember_me {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-style: normal;
+    justify-content: space-between;
+    font-weight: 500;
+    width: 180px;
+    color: #000;
+    margin: 0;
+  }
+  .forgot {
+    text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    cursor: pointer;
+    color: #214ea6;
+  }
+  .login_btn {
+    width: 100% !important;
+    height: 60px;
+    margin-top: 10%;
+    border: none;
+    background-color: #214ea6;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 8.42px;
+background: #2B50A9;
+  }
+  
+  .google_btn {
+    text-decoration: none;
+    width: 100%;
+    height: 60px;
+    margin-top: 6%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .google_btn:hover {
+    color: #000000;
+  }
+  .google_img {
+    margin-right: 2%;
+    width: 25px;
+    height: 24px;
+  }
+  
+  .or_container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .line {
+    color: #000;
+    opacity: 0.1;
+    width: 40%;
+    /* height: 2px; */
+    border: 2px solid #000000;
+  }
+  .or_text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    opacity: 0.5;
+    margin: 0;
+  }
+  input::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+  
+ 
