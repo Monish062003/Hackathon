@@ -1,14 +1,14 @@
 import './App.css';
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
-import Candidatelogin from './components/Candidate/Auth/Candidatelogin'
+import Nav from './components/Navbar/Nav';
 import CreateA from './components/CreateAccount/CreateA';
-
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <Nav />
+
         <Routes>
-          <Route path='/login' element={<Candidatelogin/>}/>
           <Route path='/create' element={<CreateA/>}/>
         </Routes>
       </BrowserRouter>
