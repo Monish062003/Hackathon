@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containers{
+    width: 45vw;
+    height: 150vh;
+    border-radius: 14.051px;
+background: #FFF;
+box-shadow: 4.684px 5.621px 39.157px -16.862px rgba(0, 0, 0, 0.25);
+}
+
+.join-tag{
+    margin-top: 5%;
+}
+
+.form-tag{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.label-name{
+    display: flex;
+    margin: 5px;
+}
+
+.input-tag{
+    width: 30vw;
+    height: 6vh;
+    border-radius: 8.42px;
+    border: none;
+background: #E8EFFF;
+outline: none;
+}
+
+.input-tag:focus{
+    border: 2.81px solid rgba(43, 80, 169, 0.70);
+
+
+}
+
+.form-tag2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.form-tag3{
+    width: 30vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.input-tag2{
+   
+    border-radius: 8.42px;
+    border: none;
+background: #E8EFFF;
+outline: none;
+}
+
+.input-tag2:focus{
+    border: 2.81px solid rgba(43, 80, 169, 0.70);
+
+
+}
+
+
+#level_btn{
+   width: 30vw;
+   height: 30vh;
+    display: none;
+    display: inline-block;
+    color: #000000;
+    border: 2px dotted #000000;
+    text-align: center;
+    padding: 12px 10px 15px;
+    font-size: 16px;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #E8EFFF;
+
+    }
+    
+    label img{
+        margin-right: 8px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .continue-btn{
+        width: 30vw;
+        height: 8vh;
+        border-radius: 8.42px;
+        border: none;
+        background: #2B50A9;
+        color: white;
+    outline: none;
+
+    }
+    
