@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.containers2{
+    width: 90vw;
+}
+
+.box-sec2{
+    width: 30vw;
+}
+
+.box2{
+    
+    border-radius: 7.508px;
+border: 1.502px solid rgba(43, 80, 169, 0.20);
+margin: 20px 20px 0 30px;
+
+}
+
+.icons2{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.logo-img{
+    width: 85px;
+    height: 48px;
+    margin-left: -20px;
+}
+
+.save-img{
+    width: 30px;
+    height: 30px;
+}
+
+.content-sec2{
+    margin: 22px;
+    font-family: Montserrat;
+
+}
+
+.company-name2{
+    color: #787878;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.locatio-name{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.rupees{
+    width: 140px;
+height: 23.514px;
+flex-shrink: 0;
+text-align: center;
+background-color: #DAE4FF;
+}
+
+.remote{
+    width: 100px;
+height: 23.514px;
+flex-shrink: 0;
+text-align: center;
+margin-top: 10px;
+background-color: #DAE4FF;
+
+}

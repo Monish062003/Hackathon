@@ -4,13 +4,21 @@
     box-sizing: border-box;
 }
 
+/* body{
+    background: #E3EBFF;
+} */
+
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background: #E3EBFF; */
+
+
 }
 
 .containers{
+    margin-top: 30px;
     width: 45vw;
     height: 150vh;
     border-radius: 14.051px;

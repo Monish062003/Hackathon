@@ -7,7 +7,7 @@ import img3 from "../images/iconamoon_bookmark.png";
 const Home = () => {
   return (
     <div>
-      <div className="container">
+      <div className="container3">
         <div className="home-sec">
           <div className="frame1">
             <div className="search-sec">
