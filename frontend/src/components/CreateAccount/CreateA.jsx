@@ -23,7 +23,7 @@ export default function CreateA() {
 
   const Login = () =>{
     signInWithPopup(auth, provider).then((data)=>{
-      console.log(data.email);
+      window.location.href="/home"
     });
   }
 
@@ -84,7 +84,7 @@ export default function CreateA() {
         </div>
         <button style={{backgroundColor:'#2B50A9',marginBottom:'7vh'}} onClick={()=>{let validationResult =validatePassword(data.password);
         if (validationResult === true) {
-    window.location.href="http://localhost:3000/createaccount2";
+          window.location.href="/create2"
     window.localStorage.setItem('email',data.email);
     window.localStorage.setItem('password',data.password);
   } else {

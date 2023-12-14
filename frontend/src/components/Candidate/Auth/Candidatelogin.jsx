@@ -19,7 +19,7 @@ const Candidatelogin = () => {
 
   const Login = () =>{
     signInWithPopup(auth, provider).then((data)=>{
-      console.log(data.email);
+      window.location.href="/home"
     });
   }
 
@@ -39,7 +39,9 @@ const Candidatelogin = () => {
     add.push(responseData);
 
     if (add[add.length-1]==responseData) {
-      window.location.href="http://localhost:3000/home";
+      if (data.email!='' && data.password!='') {
+        window.location.href="/home"
+      }
     }
   }
   return (

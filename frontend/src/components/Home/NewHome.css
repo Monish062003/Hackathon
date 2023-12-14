@@ -1,0 +1,49 @@
+.recruiter{
+    width: 100vw;
+    height: 40vh;
+    background: #CAD9FF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cross-img{
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    width: 24px;
+    height: 24px;
+}
+
+.p-tag{
+    color: black;
+    font-weight: 700;
+}
+
+.recruiter-btn{
+    width: 15vw;
+    height: 8vh;
+    border-radius: 6px;
+background: #2B50A9;
+border: none;
+color: white;
+}
+
+.cross-sec{
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    margin-right: -100px;
+    margin-top: -40px;
+}
+
+.frame2{
+    width: 100vw;
+    height: 40vh;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E3EBFF;
+    flex-direction: column;
+}
