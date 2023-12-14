@@ -3,7 +3,7 @@ import "../Auth/CandidateLogin.css";
 import GoogleImg from './google1.png'
 import {auth,provider} from "../../GoogleAuth/Google"
 import {signInWithPopup} from 'firebase/auth'
-
+import Navlink from 'react-router-dom'
 
 const Candidatelogin = () => {
   const[data,setdata]=useState({
@@ -37,6 +37,10 @@ const Candidatelogin = () => {
     });
     const responseData = await result.status;
     add.push(responseData);
+
+    if (add[add.length-1]==responseData) {
+      window.location.href="http://localhost:3000/home";
+    }
   }
   return (
     <div className='containers'>

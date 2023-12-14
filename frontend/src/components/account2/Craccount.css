@@ -1,0 +1,109 @@
+.firstlastpanel{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: start;
+    gap: 1vw;
+    width: 25vw;
+    height: max-content;
+    padding-bottom: 2vw;
+}
+
+.fnamep{
+    color: #000;
+    gap: 1vw;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.countrypanel{
+    display: flex;
+    gap: 1vw;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+#fuu{
+    width: 12vw;
+}
+
+.createblock{
+    display: flex;
+    align-items: center;
+}
+
+.check1{
+    display: flex;
+    gap: 1vw;
+}
+
+.box2{
+    font-size: 0.9rem;
+    text-align: start;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    position: relative;
+    bottom: 12vh;
+}
+
+.createbutton{
+    margin-top: 5vh;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 6vh;
+    background-color: #2B50A9;
+}
+
+@media screen and (max-width:768px) {
+    .firstlastpanel {
+        margin-top: 10vh;
+        display: flex;
+        justify-content: start;
+        gap: 2vw;
+        width: 77vw;
+        height: max-content;
+        padding-bottom: 2vw;
+    }
+
+    #fuu{
+       width: 37vw; 
+    }
+
+    .countrypanel {
+        display: flex;
+        gap: 1vw;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        color: #000;
+        font-size: 1.2rem;
+    }
+
+    .box2 {
+        font-size: 0.9rem;
+        text-align: start;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        width: 76vw;
+        position: relative;
+        bottom: 12vh;
+    }
+
+    .createbutton {
+        margin-top: 5vh;
+        font-size: 1.2rem;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        height: 6vh;
+        background-color: #2B50A9;
+    }
+}
