@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useRef} from "react";
 import "../Home/Home.css";
 import img1 from "../images/first.jpeg";
 import img2 from "../images/second.jpeg";
@@ -9,6 +9,7 @@ const Home = () => {
     const [searchValue, setSearchValue] = useState('')
     const [searchResults, setSearchResults] = useState(null)
     const [domain, setDomain] = useState(null)
+    const [selectedCard, setSelectedCard] = useState(null)
     async function query(data) {
         const response = await fetch(
             "https://api-inference.huggingface.co/models/sentence-transformers/all-mpnet-base-v2",
@@ -66,6 +67,11 @@ const Home = () => {
 
     }
 
+    const handleCardClick = (index) => {
+        setSelectedCard(searchResults[index])
+        window.location.hash = '#popup';
+    }
+
     return (
         <div>
             <div>
@@ -110,7 +116,7 @@ const Home = () => {
                     {searchResults ? (
                         <div className="box-container">
                             {searchResults.map((result, index) => (
-                                <div key={index} className="content-sec">
+                                <div key={index} className="content-sec" onClick={() => handleCardClick(index)}>
                                     <h3>{result.title}</h3>
                                     <div className="details">
                                         <h4 className="company-name">{result.company}</h4>
@@ -125,60 +131,24 @@ const Home = () => {
                     ) : (
                         <></>
                     )}
-                    {/* </div> */}
-
-                    {/* <div className="box-sec">
-            <div className="box">
-              <div className="icons">
-                <img className="logo-img" src={img2} alt="company logo" />
-                <img className="save-img" src={img3} alt="save" />
-              </div>
-
-              <div className="content-sec">
-                <h3>Graphic Designer</h3>
-                <h4 className="company-name">Jio</h4>
-                <p className="locatio-name">Mumbai, Maharashtra, India</p>
-                <p className="rupees">₹ 25,000/Month</p>
-                <p className="remote">Remote</p>
-              </div>
-            </div>
-          </div> */}
-
-                    {/* <div className="box-sec">
-            <div className="box">
-              <div className="icons">
-                <img className="logo-img" src={img2} alt="company logo" />
-                <img className="save-img" src={img3} alt="save" />
-              </div>
-
-              <div className="content-sec">
-                <h3>Graphic Designer</h3>
-                <h4 className="company-name">Jio</h4>
-                <p className="locatio-name">Mumbai, Maharashtra, India</p>
-                <p className="rupees">₹ 25,000/Month</p>
-                <p className="remote">Remote</p>
-              </div>
-            </div>
-          </div>
-
-
-          <div className="box-sec">
-            <div className="box">
-              <div className="icons">
-                <img className="logo-img" src={img2} alt="company logo" />
-                <img className="save-img" src={img3} alt="save" />
-              </div>
-
-              <div className="content-sec">
-                <h3>Graphic Designer</h3>
-                <h4 className="company-name">Jio</h4>
-                <p className="locatio-name">Mumbai, Maharashtra, India</p>
-                <p className="rupees">₹ 25,000/Month</p>
-                <p className="remote">Remote</p>
-              </div>
-            </div>
-          </div> */}
-
+                    {selectedCard && (
+                        // Render your popup component with selectedCard details
+                        <div className="popup" id="popup">
+                            <h3>{selectedCard.title}</h3>
+                            <div className="popup-content">
+                                
+                                
+                                {/* Render other details from selectedCard */}
+                                
+                                <p style={{display:"flex"}} className="special_para"><strong>Company:</strong>    {selectedCard.company}  <button>Apply</button></p>
+                                <p><strong>Location:</strong>   {selectedCard.location}</p>
+                                <p><strong>Salary:</strong>   ₹ {selectedCard.fees}/Month</p>
+                                <p><strong>Description:</strong>  {selectedCard.description}</p>
+                                {/* Add other details as needed */}
+                            </div>
+                        </div>
+                    )}
+                    
 
 
 

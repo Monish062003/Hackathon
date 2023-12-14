@@ -66,8 +66,23 @@ const PlatForm = () => {
               </div>
 
               <div className="content-sec2">
-                <h3>Graphic Designer</h3>
-                <h4 className="company-name">Jio</h4>
+                <h3>ML Engineer</h3>
+                <h4 className="company-name">Accenture</h4>
+                <p className="locatio-name">Mumbai, Maharashtra, India</p>
+                <p className="rupees">₹ 5,000/Month</p>
+                <p className="remote">Remote</p>
+              </div>
+            </div>
+
+            <div className="box2">
+              <div className="icons">
+                <img className="logo-img" src={img2} alt="company logo" />
+                <img className="save-img" src={img3} alt="save" />
+              </div>
+
+              <div className="content-sec2">
+                <h3>Deveops Engineer</h3>
+                <h4 className="company-name">Finplex</h4>
                 <p className="locatio-name">Mumbai, Maharashtra, India</p>
                 <p className="rupees">₹ 25,000/Month</p>
                 <p className="remote">Remote</p>
@@ -81,10 +96,10 @@ const PlatForm = () => {
               </div>
 
               <div className="content-sec2">
-                <h3>Graphic Designer</h3>
-                <h4 className="company-name">Jio</h4>
+                <h3>Full stack developer</h3>
+                <h4 className="company-name">Wipro</h4>
                 <p className="locatio-name">Mumbai, Maharashtra, India</p>
-                <p className="rupees">₹ 25,000/Month</p>
+                <p className="rupees">₹ 25,00/Month</p>
                 <p className="remote">Remote</p>
               </div>
             </div>
@@ -96,22 +111,7 @@ const PlatForm = () => {
               </div>
 
               <div className="content-sec2">
-                <h3>Graphic Designer</h3>
-                <h4 className="company-name">Jio</h4>
-                <p className="locatio-name">Mumbai, Maharashtra, India</p>
-                <p className="rupees">₹ 25,000/Month</p>
-                <p className="remote">Remote</p>
-              </div>
-            </div>
-
-            <div className="box2">
-              <div className="icons">
-                <img className="logo-img" src={img2} alt="company logo" />
-                <img className="save-img" src={img3} alt="save" />
-              </div>
-
-              <div className="content-sec2">
-                <h3>Graphic Designer</h3>
+                <h3>tcs</h3>
                 <h4 className="company-name">Jio</h4>
                 <p className="locatio-name">Mumbai, Maharashtra, India</p>
                 <p className="rupees">₹ 25,000/Month</p>

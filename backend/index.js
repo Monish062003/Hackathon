@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 const port = 4000;
 
-const uri = "mongodb://localhost:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.0.2";
+const uri = "mongodb+srv://GIGA-CODER:Aditya.sakpal%40123@cluster0.yp08q4t.mongodb.net/?retryWrites=true&w=majority";
 
 const client = new MongoClient(uri, {
   serverApi: {
@@ -16,30 +16,6 @@ const client = new MongoClient(uri, {
 });
 
 app.use(cors());
-
-app.post("/create",async(req,res)=>{
-    const email = req.body.email;
-    const password = req.body.password;
-    const worksCollection = client.db("Hire_Net").collection("Works");
-    const create = await worksCollection.insertMany({email:email,password:password});
-    
-    res.send(create);
-});
-
-app.get("/read",async(req,res)=>{
-    const create = await worksCollection.create();
-
-    await email.create({email:email});
-    res.send(200);
-});
-
-app.get("/update",(req,res)=>{
-    res.send('update');
-});
-
-app.get("/delete",(req,res)=>{
-    res.send('delete');
-});
 
 app.post('/getSearchResults', async (req, res) => {
   try {
@@ -61,9 +37,6 @@ app.post('/getSearchResults', async (req, res) => {
     await client.close();
   }
 });
-
-
-
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

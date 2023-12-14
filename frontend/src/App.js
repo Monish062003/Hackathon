@@ -14,6 +14,7 @@ import Chatbot from './components/Chatbot/Chatbot';
 function App() {
   return (
     <div className="App">
+      <Chatbot/>
       <BrowserRouter>
         <Routes>
           <Route path='/forgot' element={<ForgotPassword/>}/>
