@@ -1,30 +1,70 @@
 const express = require('express');
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const cors = require('cors');
 
 const app = express();
+const port = 3000;
 
-const path=require("path");
-const bodyParser = require('body-parser');
-const mongoose = require("mongoose");
-app.use(express.urlencoded());
+const uri = "mongodb://localhost:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.0.2";
 
-const run = async() =>{
-    await mongoose.connect('mongodb+srv://HiteshLavdu:YdyrKigEQszqoMfw@cluster0.7pfxpj7.mongodb.net/').then(()=>{
-        console.log("Connected");
-    }).catch((error)=>{
-        console.log(error);
-    })
-    
-    let port=80;
-    
-    
-    app.get("/",(req,res)=>{
-        res.send("Working")
-    })
-    
-    app.listen(port,()=>{
-        console.log(`Listen to : http://localhost:80`);
-    })
+const client = new MongoClient(uri, {
+  serverApi: {
+    version: ServerApiVersion.v1,
+    strict: true,
+    deprecationErrors: true,
+  }
+});
 
-}
+app.use(cors());
 
-run();
+app.post("/create",async(req,res)=>{
+    const email = req.body.email;
+    const password = req.body.password;
+    const worksCollection = client.db("Hire_Net").collection("Works");
+    const create = await worksCollection.insertMany({email:email,password:password});
+    
+    res.send(create);
+});
+
+app.get("/read",async(req,res)=>{
+    const create = await worksCollection.create();
+
+    await email.create({email:email});
+    res.send(200);
+});
+
+app.get("/update",(req,res)=>{
+    res.send('update');
+});
+
+app.get("/delete",(req,res)=>{
+    res.send('delete');
+});
+
+app.post('/getSearchResults', async (req, res) => {
+  try {
+    console.log("reached")
+    await client.connect();
+    
+    // Access the Works collection
+    const worksCollection = client.db("Hire_Net").collection("Works");
+
+    // Fetch records from the Works collection
+    const worksData = await worksCollection.find({}).toArray();
+
+    // Send the fetched data to the frontend
+    res.json(worksData);
+  } catch (error) {
+    console.error('Error fetching records:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  } finally {
+    await client.close();
+  }
+});
+
+
+
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
