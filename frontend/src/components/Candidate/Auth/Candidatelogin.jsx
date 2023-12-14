@@ -22,12 +22,28 @@ const Candidatelogin = () => {
       console.log(data.email);
     });
   }
+
+  const Confirm =async()=>{
+    let add = [];
+    const result = await fetch("/create", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+          email: data.email,
+          password: data.password,
+      }),
+    });
+    const responseData = await result.status;
+    add.push(responseData);
+  }
   return (
     <div className='containers'>
     <div className='loginPage'>
     <div className='login_container'>
         <div class="left_container">
-            <form className="container_login">
+            <form className="container_login" >
                 <h3 className='logintag'>Login</h3>
 
                 <div className="newUser-sec">
@@ -39,7 +55,7 @@ const Candidatelogin = () => {
 
                 <div className="input_box">
                     <label for="email" className="email_label">Email address</label>
-                    <input type="text" autocomplete="off" className="email_input" id="email" name="email" value={data.email} onChange={onChangeListener} />
+                    <input type="email" autocomplete="off" className="email_input" id="email" name="email" value={data.email} onChange={onChangeListener} />
                 </div>
                 <div className="input_box1">
                     <label for="password" className="email_label">Password</label>
@@ -52,7 +68,7 @@ const Candidatelogin = () => {
 
                 </div>
                 
-                <button type="button" className="login_btn">Login</button>
+                <button type="button" className="login_btn" onClick={Confirm} >Login</button>
                 <div className="or_container">
                     <span className="line"></span>
                     <p className="or_text">Or</p>
