@@ -119,7 +119,7 @@ export default function Craccount2() {
             />
             <p>The HireNext may keep me informed with personalized emails about products and services.</p>
           </div>
-          <p>See our Privacy Policy for more details or to opt-out at any time.</p>
+          <p>See our Privacy Policy for more de tails or to opt-out at any time.</p>
           <button className='createbutton' onClick={createAccount}>
             Create Account
           </button>
