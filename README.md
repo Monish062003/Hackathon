@@ -1,3 +1,8 @@
+<h1 align="center">
+  <br>
+  <img src="https://github.com/Monish062003/Hackathon/blob/f4729b60d904a660ebb07597eacc8db7db0e5ef3/Frame%201171276112.png" alt="HireNEXT"  width="200">
+</h1>
+
 ****HireNext: Empowering Freelancers and Clients Alike****
 
 HireNext, your go-to freelancing platform that revolutionizes the way freelancers and clients connect and collaborate. Whether you're a talented freelancer looking for exciting opportunities or a client in search of top-notch professionals, HireNext has got you covered.
@@ -17,4 +22,56 @@ Clone the Repository: git clone https://github.com/your-username/HireNext.git
 Install Dependencies: npm install
 Configure Environment Variables: Set up your environment variables for database connections, API keys, and other sensitive information.
 Run the Application: npm start
+
+## How To Use
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/your-username/HireNext.git
+
+# Install dependencies
+$ npm install
+
+Configure Environment Variables: Set up your environment variables
+for database connections, API keys, and other sensitive information.
+
+# Run the app
+$ npm start
+```
+
+## UI of the Website
+
+Sign-up Page
+The signup page is where new users can create accounts on our platform. Users provide necessary information, such as email and password, to establish their identity and access the features of our website.
+<img src="https://github.com/Monish062003/Hackathon/blob/main/Website_UI/signup.png" alt="SignUp"  width="800">
+
+<img src="https://github.com/Monish062003/Hackathon/blob/main/Website_UI/signup_2.png" alt="SignUp2"  width="800">
+
+
+Login
+The login page is the gateway for existing users to access their accounts. Users input their credentials—usually email and password
+<img src="https://github.com/Monish062003/Hackathon/blob/main/Website_UI/Login.png" alt="Login"  width="800">
+
+Home
+The home page serves as the central hub of your platform. It displays a curated list of jobs posted by companies, providing users with a snapshot of available opportunities. Navigation from the home page directs users to specific job categories or details.
+<img src="https://github.com/Monish062003/Hackathon/blob/main/Website_UI/Home_1.png"  width="800">
+
+Join as a Recruiter
+The recruiter registration page is designed for companies or individuals looking to post job opportunities on your platform. It features a form where recruiters can input details about their company, the types of roles they are hiring for, and other relevant information.
+<img src="https://github.com/Monish062003/Hackathon/blob/main/Website_UI/join_as_recruiter.png"  width="800">
+
+Join as a Freelancer
+The freelancer registration page is tailored for individuals seeking freelance opportunities. It includes a form for freelancers to input their skills, experience, and other relevant details. This information helps match freelancers with suitable job listings.
+<img src="https://github.com/Monish062003/Hackathon/blob/main/Website_UI/join_as_a_freelancer.png"  width="800">
+
+## Team Members
+
+This software uses the following open source packages:
+
+- Monish Mayekar
+- Hitesh Sahu
+- Aditya Sakpal
+- Naijil Aji
 
