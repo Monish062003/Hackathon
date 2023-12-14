@@ -9,6 +9,7 @@ import Craccount2 from './components/account2/Craccount2';
 function App() {
   return (
     <div className="App">
+      <Chatbot/>
       <BrowserRouter>
         <Routes>
           <Route path='/createaccount' element={<CreateA/>}/>
