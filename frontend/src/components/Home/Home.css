@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 .frame1{
     margin-top: 70px;
     width: 100%;
@@ -17,10 +19,11 @@
 }
 
 .search-sec{
-    display: flex;
+    /* border: 1px solid black; */
+    margin-top: 5%;
+    display: block;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
 
 }
 
@@ -56,9 +59,9 @@ box-shadow: 6px 6px 23.3px -12px rgba(0, 0, 0, 0.20);
 
 .job-sec{
     position: relative;
-    top: 30px;
-
-   
+    top: 70px;
+    padding: 20px;
+    margin-bottom: 30px;
 }
 
 .job-title{
@@ -67,10 +70,15 @@ box-shadow: 6px 6px 23.3px -12px rgba(0, 0, 0, 0.20);
 }
 
 .job-title li{
+    /* width: 400px; */
+    /* border: 1px solid black; */
 list-style: none;
-padding: 30px;
+padding: 20px;
+/* padding-bottom: 10px; */
 font-family: Montserrat;
 color: #787878;
+font-size: small;
+/* display: none; */
 }
 
 
@@ -79,7 +87,17 @@ color: #787878;
     justify-content: space-between;
     margin: 70px;
     font-family: Montserrat;
+}
 
+.explore h3{
+    font-size: 22px;
+    font-weight: 600;
+    margin-right: 160px;
+}
+.explore h2{
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 180px;
 }
 
 .explore-more{
@@ -93,15 +111,18 @@ color: #787878;
 
 .box-sec{
     display: flex;
-    flex-wrap: nowrap;
-    flex-wrap: wrap;
+    border: 1px solid black;
 }
 
+
+
 .box{
-    
+    width: 300px;
+    height: 300px;
+    border: 1.502px solid rgba(43, 80, 169, 0.20);
     border-radius: 7.508px;
-border: 1.502px solid rgba(43, 80, 169, 0.20);
-margin: 20px 20px 0 30px;
+
+
 
 }
 
@@ -123,9 +144,28 @@ margin: 20px 20px 0 30px;
 }
 
 .content-sec{
+    width: 500px;
+    height: 300px;
+    padding-top:40px ;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.07) 0px -12px 30px, rgba(0, 0, 0, 0.07) 0px 4px 6px, rgba(0, 0, 0, 0.07) 0px 12px 13px, rgba(0, 0, 0, 0.07) 0px -3px 5px;    
     margin: 22px;
     font-family: Montserrat;
+}
+.content-sec h3{
+    font-size: 30px;
+}
+.content-sec h4{
+    text-align: start;
+    align-items: start;
+    justify-content: start;
 
+}
+
+.location-name{
+    text-align: start;
+    align-items: start;
+    justify-content: start;
 }
 
 .company-name{
@@ -157,15 +197,18 @@ flex-shrink: 0;
 text-align: center;
 margin-top: 10px;
 background-color: #DAE4FF;
-
 }
 
-@media(max-width: 900px){
-    .job-sec{
-        display: none;
-    }
+.box-container{
+    display: flex;
+    /* border: 1px solid black; */
+    padding:50px;
+    height: 70vh;
+    width: 100%;
+}
 
-    .search-sec{
-        margin-bottom: 40px;
-    }
+.details{
+    /* border: 1px solid black; */
+    justify-content: space-around;
+    padding-left: 50px;
 }

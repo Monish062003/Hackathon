@@ -9,12 +9,13 @@ import JoinAS from './components/JoinASFreelancer/JoinAS';
 import PlatForm from './components/PlatformPage/PlatForm';
 import Recruiter from './components/JoinRecruiter/Recruiter';
 import NewHome from './components/Home/NewHome';
+import Chatbot from './components/Chatbot/Chatbot';
+// import Home from './components/Home/Home';
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/crea' element={<CreateA/>}/>
           <Route path='/forgot' element={<ForgotPassword/>}/>
           <Route path='/candidate' element={<Candidatelogin/>}/>
           <Route path='/create' element={<CreateA/>}/>

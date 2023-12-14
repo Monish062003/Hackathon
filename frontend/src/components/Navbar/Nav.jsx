@@ -10,7 +10,7 @@ const Nav = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <div className="container-fluid">
       <Link className="navbar-brand" to="#">
-        <img className="logo-img" src={img1} alt="Logo" />
+        <img className="logo-img" src={img1} style={{width:"200px"}} alt="Logo" />
       </Link>
       <button
         className="navbar-toggler"
@@ -26,17 +26,17 @@ const Nav = () => {
       <div className="collapse navbar-collapse " id="navbarSupportedContent">
         <ul className="nav navbar-nav navbar-right nav-element">
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to="#">
+            <Link className="nav-link active" style={{fontFamily:"Montserrat",fontWeight:"bold",color:"#1e1e1e"}} aria-current="page" to="#">
               Saved
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to="#">
+            <Link className="nav-link active" style={{fontFamily:"Montserrat",fontWeight:"bold",color:"#1e1e1e"}} aria-current="page" to="#">
               Work
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to="#">
+            <Link className="nav-link active" style={{fontFamily:"Montserrat",fontWeight:"bold",color:"#1e1e1e"}} aria-current="page" to="#">
               Companies
             </Link>
           </li>
