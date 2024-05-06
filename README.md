@@ -15,7 +15,8 @@ Use of EmailJS: Streamline communication and notifications with the use of Email
 Categorization using Employees Top Skills: Enhance the user experience by categorizing tasks based on employees' top skills. This ensures that projects are assigned to individuals with the right expertise.
 User Authorization: Prioritize security and control with user authorization.
 
-**System Design**
+**System Design :**
+
 ![diagram-export-5-6-2024-3_18_52-PM](https://github.com/Aditya-Sakpal/Hackathon/assets/112710558/ebffa242-bbd5-4461-be80-6e65a09d28fe)
 
 **Getting Started:**
